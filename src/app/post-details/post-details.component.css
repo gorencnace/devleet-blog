@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 2000px;
+  margin-block: 2rem;
+  gap: 2rem;
+}
+
+.container img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+
+  overflow: hidden;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: #ece9e6;
+  background: linear-gradient(to right, #ffffff, #ece9e6);
+}
+
+.card_body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card_body h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.card_footer {
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.author {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.author_info > small {
+  color: #666;
+}

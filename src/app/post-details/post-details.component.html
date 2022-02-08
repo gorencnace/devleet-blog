@@ -1,0 +1,17 @@
+<div *ngIf="post">
+    <h2>{{post.title}}</h2>
+    <h3>{{post.author}}</h3>
+    <p>{{post.text}}</p>
+    <button type="button">Edit</button>
+    <button type="button">Remove</button>
+    
+    <button type="button">
+        <a routerLink="/post-details/{{post.id}}/comment-create">
+            Add comment
+        </a>
+    </button>
+    <h4>Comments:</h4>
+    <div *ngFor="let comment of post.comments">
+        <app-comment [comment]="comment"></app-comment>
+    </div>
+</div>
