@@ -1,0 +1,15 @@
+<div *ngIf="comment" style="position:relative;left:20px">
+    <p>({{comment.vote}}) {{comment.author}}: {{comment.text}}</p>
+    <button type="button">Edit</button>
+    <button type="button">Remove</button>
+    <button type="button">
+        <a routerLink="/comment/{{comment.id}}/comment-reply">
+            Reply
+        </a>
+    </button>
+    <button type="button">Upvote</button>
+    <button type="button">Downvote</button>
+    <div *ngFor="let subcomment of comment.comment_chain">
+        <app-comment [comment]="subcomment"></app-comment>
+    </div>
+</div>
