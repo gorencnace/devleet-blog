@@ -10,6 +10,12 @@
       "StackName": "amplify-devleetproject-dev-111739",
       "StackId": "arn:aws:cloudformation:eu-central-1:085466224386:stack/amplify-devleetproject-dev-111739/23935b80-827f-11ec-af2c-060b74da2b18",
       "AmplifyAppId": "d3bnn8i3wsr5m4"
+    },
+    "categories": {
+      "auth": {
+        "devleetproject8a3c3640": {},
+        "devleetproject518d6dce": {}
+      }
     }
   }
 }
