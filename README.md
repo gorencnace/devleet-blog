@@ -25,3 +25,15 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## DEV LOG
+
+1. **Local environment setup:**
+   1. Angular
+   2. AWS account
+2. **Frontend:**
+   1. main page (list of posts),
+   2. post details page,
+   3. new post/comment page
+   4. routing
+3. **Backend:**
