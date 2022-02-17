@@ -1,0 +1,14 @@
+{
+  "resourceName": "blogDB",
+  "tableName": "blogStorage",
+  "partitionKey": {
+    "fieldName": "id",
+    "fieldType": "number"
+  },
+  "sortKey": {
+    "fieldName": "parentId",
+    "fieldType": "number"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

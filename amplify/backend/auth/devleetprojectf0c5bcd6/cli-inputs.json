@@ -1,10 +1,10 @@
 {
   "version": "1",
   "cognitoConfig": {
-    "identityPoolName": "devleetproject518d6dce_identitypool_518d6dce",
-    "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "devlee518d6dce",
-    "userPoolName": "devleetproject518d6dce_userpool_518d6dce",
+    "identityPoolName": "devleetprojectf0c5bcd6_identitypool_f0c5bcd6",
+    "allowUnauthenticatedIdentities": true,
+    "resourceNameTruncated": "devleef0c5bcd6",
+    "userPoolName": "devleetprojectf0c5bcd6_userpool_f0c5bcd6",
     "autoVerifiedAttributes": [
       "email"
     ],
@@ -20,8 +20,7 @@
     "passwordPolicyMinLength": 8,
     "passwordPolicyCharacters": [],
     "requiredAttributes": [
-      "email",
-      "name"
+      "email"
     ],
     "aliasAttributes": [],
     "userpoolClientGenerateSecret": false,
@@ -32,19 +31,29 @@
     "userpoolClientReadAttributes": [
       "email"
     ],
-    "userpoolClientLambdaRole": "devlee518d6dce_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "devleef0c5bcd6_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "518d6dce",
-    "resourceName": "devleetproject518d6dce",
+    "sharedId": "f0c5bcd6",
+    "resourceName": "devleetprojectf0c5bcd6",
     "authSelections": "identityPoolAndUserPool",
     "useDefault": "default",
-    "usernameAttributes": [
-      "email"
-    ],
-    "triggers": {},
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,
-    "useEnabledMfas": true
+    "useEnabledMfas": true,
+    "authRoleArn": {
+      "Fn::GetAtt": [
+        "AuthRole",
+        "Arn"
+      ]
+    },
+    "unauthRoleArn": {
+      "Fn::GetAtt": [
+        "UnauthRole",
+        "Arn"
+      ]
+    },
+    "breakCircularDependency": true,
+    "dependsOn": []
   }
 }
