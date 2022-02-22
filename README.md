@@ -36,4 +36,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
    2. post details page,
    3. new post/comment page
    4. routing
-3. **Backend:**
+3. **First deployment:**
+   1. deployment of first static page (took a long time).node
+      1. build failed: https://github.com/aws-amplify/amplify-console/issues/440
+      2. build error: Invalid version: "15.2-15.3" (https://github.com/angular/angular-cli/issues/22606)
+4. **AWS Services:**
+   1. cognito: https://ui.docs.amplify.aws/components/authenticator?platform=angular
+   2. storage, api
+5. **Lambda + Express.js:**

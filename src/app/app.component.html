@@ -1,4 +1,11 @@
 <h1>{{title}}</h1>
-<button type="button">Log in</button>
-<button type="button">Register</button>
+<amplify-authenticator>
+    <ng-template
+    amplifySlot="authenticated"
+    let-user="user"
+    let-signOut="signOut">
+    <h2>Welcome {{ user.username }}!</h2>
+    <button (click)="signOut()">Sign Out</button>
+  </ng-template>
+</amplify-authenticator>
 <router-outlet></router-outlet>

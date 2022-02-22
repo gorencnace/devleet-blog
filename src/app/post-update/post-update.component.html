@@ -1,0 +1,10 @@
+<div *ngIf="post">
+    <h4>Edit post</h4>
+    <label for="posttitle">Title: </label>
+    <input type="text" id="posttitle" name="posttitle" value="{{post.title}}"><br><br>
+    <label for="posttext">Text: </label>
+    <input type="text" id="posttext" name="posttext" value="{{post.text}}"><br><br>
+    <label for="postimg">Image: </label>
+    <input type="file" accept="image/*" id="postimg" name="postimg" value="{{post.img}}"><br><br>
+    <button type="button">Submit</button>
+</div>

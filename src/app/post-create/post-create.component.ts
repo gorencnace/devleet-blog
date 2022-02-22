@@ -10,6 +10,7 @@ export class PostCreateComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }

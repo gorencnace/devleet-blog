@@ -15,6 +15,14 @@
     },
     "s3Key": {
       "Type": "String"
+    },
+    "storageblogDBName": {
+      "Type": "String",
+      "Default": "storageblogDBName"
+    },
+    "storageblogDBArn": {
+      "Type": "String",
+      "Default": "storageblogDBArn"
     }
   },
   "Conditions": {
@@ -89,12 +97,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "devleetprojectLambdaRole4358fbaa",
+            "devleetprojectLambdaRole24b3b09e",
             {
               "Fn::Join": [
                 "",
                 [
-                  "devleetprojectLambdaRole4358fbaa",
+                  "devleetprojectLambdaRole24b3b09e",
                   "-",
                   {
                     "Ref": "env"
@@ -160,6 +168,34 @@
                   }
                 ]
               }
+            },
+            {
+              "Effect": "Allow",
+              "Action": [
+                "dynamodb:DescribeTable",
+                "dynamodb:GetItem",
+                "dynamodb:Query",
+                "dynamodb:Scan",
+                "dynamodb:PutItem",
+                "dynamodb:UpdateItem",
+                "dynamodb:DeleteItem"
+              ],
+              "Resource": [
+                {
+                  "Ref": "storageblogDBArn"
+                },
+                {
+                  "Fn::Join": [
+                    "/",
+                    [
+                      {
+                        "Ref": "storageblogDBArn"
+                      },
+                      "index/*"
+                    ]
+                  ]
+                }
+              ]
             }
           ]
         }
