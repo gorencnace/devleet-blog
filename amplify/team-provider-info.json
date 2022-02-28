@@ -15,14 +15,7 @@
     "categories": {
       "auth": {
         "devleetprojectb45434a2": {},
-        "devleetprojectf0c5bcd6": {},
         "true": {}
-      },
-      "function": {
-        "postsLambda": {
-          "deploymentBucketName": "amplify-devleetproject-dev-150117-deployment",
-          "s3Key": "amplify-builds/postsLambda-6143764a3452676b697a-build.zip"
-        }
       }
     }
   }

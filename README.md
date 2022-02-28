@@ -44,3 +44,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
    1. cognito: https://ui.docs.amplify.aws/components/authenticator?platform=angular
    2. storage, api
 5. **Lambda + Express.js:**
+   1. problems with authorization
+   2.
